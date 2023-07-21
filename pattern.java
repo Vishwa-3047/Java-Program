@@ -1,39 +1,15 @@
 import java.util.*;
-public class pattern {
+class pattern
+{ 
+ public static void main(String args[]) 
+{ 
+  int[][] Example =    new int [5][5];
 
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        String a=sc.next();
-        String b=sc.next();
-        a=a.toUpperCase();
-        b=b.toUpperCase();
-        int n,i,j;
-        if(a.length()>b.length())
-            n=a.length();
-        else
-            n=b.length();
-        for(i=0;i<=n;i++)
-        {
-            if(i<=a.length())
-            {
-                for(j=0;j<i;j++)
-                    System.out.print(a.charAt(j));
-            }
-            else
-            {				for(j=0;j<a.length();j++)
-                System.out.print(b.charAt(j));}
-            if(i<b.length())
-            {	for(j=0;j<i;j++)
-                System.out.print(b.charAt(j));}
-            else
-            {for(j=0;j<b.length();j++)
-                System.out.print(b.charAt(j));}
+        for(int i=0;i<Example.length;i++){
+            for(int k=0;k<Example.length;k++)
+            System.out.print(Example[i][k]+" ");
+            System.out.println(); 
 
-
-            System.out.println(" ");
-        }
-
-        sc.close();
+       }
     }
-
 }
