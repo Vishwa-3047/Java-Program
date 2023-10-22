@@ -1,15 +1,25 @@
-import java.util.Scanner;
-class swap{
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter first number: ");
-        int num1 = sc.nextInt();
-        System.out.print("Enter second number: ");
-        int num2 = sc.nextInt();
-        int temp = num1;
-        num1 = num2;
-        num2 = temp;
-        System.out.println(+ num1);
-        System.out.println(+ num2);
+import java.util.*;
+class swap
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=1;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        Scanner a=new Scanner(System.in);
+        int k=a.nextInt();
+        int count=0;
+        for(int i=1;i<k;i++)
+        {
+            if(arr[i]>k)
+            {
+                count++;
+            }
+        }
+        System.out.println(count);
     }
 }

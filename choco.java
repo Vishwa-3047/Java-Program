@@ -1,7 +1,7 @@
 import java.util.*;
-class sale
+class choco
 {
-    public static void main (String args[])
+    public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
@@ -10,9 +10,5 @@ class sale
         {
             a[i]=sc.nextInt();
         }
-        Arrays.sort(a);
-        int b=a[n-1];
-        int c=a[n-2];
-        System.out.println(b+c);
     }
 }
